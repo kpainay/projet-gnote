@@ -1,0 +1,17 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+	<qresource>
+		<file>images/bank.png</file>
+		<file>images/bussiness-man.png</file>
+		<file>images/dean.png</file>
+		<file>images/home.png</file>
+		<file>images/inspection.png</file>
+		<file>images/interrogation.png</file>
+		<file>images/personal-information.png</file>
+		<file>images/search.png</file>
+		<file>images/settings.png</file>
+		<file>images/target-audience.png</file>
+		<file>images/user(1).png</file>
+		<file>images/user.png</file>
+	</qresource>
+</RCC>

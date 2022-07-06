@@ -1,0 +1,1403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>623</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMaximumSize</enum>
+      </property>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,0,1,10">
+        <property name="spacing">
+         <number>2</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,0,10">
+          <property name="spacing">
+           <number>3</number>
+          </property>
+          <item>
+           <widget class="QGraphicsView" name="logo">
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="dragMode">
+             <enum>QGraphicsView::ScrollHandDrag</enum>
+            </property>
+            <property name="resizeAnchor">
+             <enum>QGraphicsView::AnchorViewCenter</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>10</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="title">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 0, 0);
+background-color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string>GESTION DES NOTES</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>5</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="Line" name="line">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,0,0,4">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout" stretch="1,1,1,1,1,1,1,1,1,1,1,2">
+            <property name="spacing">
+             <number>8</number>
+            </property>
+            <item>
+             <spacer name="verticalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="font">
+               <font>
+                <family>Arial Rounded MT Bold</family>
+                <pointsize>14</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 0, 0);</string>
+              </property>
+              <property name="text">
+               <string>ACTIONS</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>10</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnCreation">
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="text">
+               <string>CREATION</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>10</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnAffichage">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>AFFICHAGE</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>3</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnAttributions">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>ATTRIBUTIONS</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>10</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnNotif">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>NOTIFICATIONS</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>16</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QToolButton" name="toolButton">
+              <property name="font">
+               <font>
+                <pointsize>23</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>*</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>5</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="Line" name="line_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget">
+            <property name="whatsThis">
+             <string>stackedWidget</string>
+            </property>
+            <property name="currentIndex">
+             <number>2</number>
+            </property>
+            <widget class="QWidget" name="CREATIONS">
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_4">
+                <item>
+                 <widget class="QTabWidget" name="wigCreations">
+                  <property name="currentIndex">
+                   <number>4</number>
+                  </property>
+                  <widget class="QWidget" name="tabEt">
+                   <attribute name="title">
+                    <string>ETUDIANT</string>
+                   </attribute>
+                   <layout class="QHBoxLayout" name="horizontalLayout_9">
+                    <item>
+                     <layout class="QFormLayout" name="formLayout">
+                      <item row="0" column="0">
+                       <widget class="QLabel" name="Matricule">
+                        <property name="text">
+                         <string>Matricule</string>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="1">
+                       <widget class="QLineEdit" name="matriculeEdit"/>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QLabel" name="nomEt">
+                        <property name="text">
+                         <string>Nom</string>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="1">
+                       <widget class="QLineEdit" name="nomEdit"/>
+                      </item>
+                      <item row="2" column="0">
+                       <widget class="QLabel" name="prenomsEt">
+                        <property name="text">
+                         <string>Prenoms</string>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="1">
+                       <widget class="QLineEdit" name="prenomEdit"/>
+                      </item>
+                      <item row="3" column="0">
+                       <widget class="QLabel" name="labelPhoneEt">
+                        <property name="text">
+                         <string>Telephone</string>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="1">
+                       <widget class="QLineEdit" name="phoneEtud"/>
+                      </item>
+                      <item row="4" column="0">
+                       <widget class="QLabel" name="DOBET">
+                        <property name="enabled">
+                         <bool>true</bool>
+                        </property>
+                        <property name="text">
+                         <string>Date de Naissance</string>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="1">
+                       <widget class="QDateTimeEdit" name="dateTimeEdit"/>
+                      </item>
+                      <item row="5" column="0">
+                       <widget class="QLabel" name="labelSEX">
+                        <property name="text">
+                         <string>Sexe</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="5" column="1">
+                       <layout class="QVBoxLayout" name="verticalLayout_8">
+                        <item>
+                         <widget class="QRadioButton" name="rdBtnMale">
+                          <property name="text">
+                           <string>Male</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QRadioButton" name="rdBtnFemale">
+                          <property name="text">
+                           <string>Female</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item row="7" column="0">
+                       <widget class="QPushButton" name="btnAnnulEt">
+                        <property name="text">
+                         <string>Annuler</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="7" column="1">
+                       <widget class="QPushButton" name="btnComfirmEt">
+                        <property name="text">
+                         <string>Comfirmer</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="6" column="1">
+                       <widget class="QPlainTextEdit" name="noteEditEt"/>
+                      </item>
+                      <item row="6" column="0">
+                       <widget class="QLabel" name="noteEt">
+                        <property name="text">
+                         <string>Notes</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tabClass">
+                   <attribute name="title">
+                    <string>CLASSE</string>
+                   </attribute>
+                   <layout class="QHBoxLayout" name="horizontalLayout_10">
+                    <item>
+                     <layout class="QFormLayout" name="addStudentForm">
+                      <item row="0" column="0">
+                       <widget class="QLabel" name="labelEcole">
+                        <property name="text">
+                         <string>Ecole</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="1">
+                       <widget class="QLineEdit" name="ecoleEdit"/>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QLabel" name="labelNomFil">
+                        <property name="text">
+                         <string>Libelle</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="1">
+                       <widget class="QLineEdit" name="editNomFil"/>
+                      </item>
+                      <item row="2" column="0">
+                       <widget class="QLabel" name="labelDomaine">
+                        <property name="text">
+                         <string>Filière</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="1">
+                       <widget class="QLineEdit" name="editFiliere"/>
+                      </item>
+                      <item row="4" column="0">
+                       <widget class="QPushButton" name="btnCancelFiliere">
+                        <property name="text">
+                         <string>Annuler</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="1">
+                       <widget class="QPushButton" name="btnConfirmFiliere">
+                        <property name="text">
+                         <string>Comfirmer</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="1">
+                       <widget class="QPlainTextEdit" name="editNoteClass"/>
+                      </item>
+                      <item row="3" column="0">
+                       <widget class="QLabel" name="labelNoteClass">
+                        <property name="text">
+                         <string>Note</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="5" column="1">
+                       <spacer name="verticalSpacer_8">
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>20</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tabFilere">
+                   <attribute name="title">
+                    <string>FILIERE</string>
+                   </attribute>
+                   <layout class="QHBoxLayout" name="horizontalLayout_11">
+                    <item>
+                     <layout class="QFormLayout" name="formLayout_3">
+                      <item row="0" column="0">
+                       <widget class="QLabel" name="labelEcole_2">
+                        <property name="text">
+                         <string>Ecole</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="1">
+                       <widget class="QLineEdit" name="ecoleEdit_2"/>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QLabel" name="labelNomFil_2">
+                        <property name="text">
+                         <string>Libelle</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="1">
+                       <widget class="QLineEdit" name="editNomFil_2"/>
+                      </item>
+                      <item row="2" column="1">
+                       <widget class="QLineEdit" name="editFiliere_2"/>
+                      </item>
+                      <item row="4" column="0">
+                       <widget class="QPushButton" name="btnCancelFiliere_2">
+                        <property name="text">
+                         <string>Annuler</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="1">
+                       <widget class="QPushButton" name="btnConfirmFiliere_2">
+                        <property name="text">
+                         <string>Comfirmer</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="0">
+                       <widget class="QLabel" name="labelNoteClass_2">
+                        <property name="text">
+                         <string>Mattieres</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="5" column="1">
+                       <spacer name="verticalSpacer_9">
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>20</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item row="3" column="1">
+                       <layout class="QGridLayout" name="gridLayout_3">
+                        <item row="3" column="0">
+                         <widget class="QCheckBox" name="checkBox_14">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QCheckBox" name="checkBox_15">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="1">
+                         <widget class="QCheckBox" name="checkBox_18">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="QCheckBox" name="checkBox_17">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QCheckBox" name="checkBox_20">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="2">
+                         <widget class="QCheckBox" name="checkBox_16">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="QCheckBox" name="checkBox_19">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="QCheckBox" name="checkBox_21">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="QCheckBox" name="checkBox_22">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="1">
+                         <widget class="QCheckBox" name="checkBox_23">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="2">
+                         <widget class="QCheckBox" name="checkBox_24">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="2">
+                         <widget class="QRadioButton" name="radioButton">
+                          <property name="text">
+                           <string>RadioButton</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tabEC">
+                   <attribute name="title">
+                    <string>EC</string>
+                   </attribute>
+                   <layout class="QHBoxLayout" name="horizontalLayout_12">
+                    <item>
+                     <layout class="QFormLayout" name="formLayout_4">
+                      <item row="0" column="0">
+                       <widget class="QLabel" name="labelEcole_3">
+                        <property name="text">
+                         <string>Numero</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="1">
+                       <widget class="QLineEdit" name="ecoleEdit_3"/>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QLabel" name="labelNomFil_3">
+                        <property name="text">
+                         <string>Libelle</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="1">
+                       <widget class="QLineEdit" name="editNomFil_3"/>
+                      </item>
+                      <item row="2" column="1">
+                       <widget class="QLineEdit" name="editFiliere_3"/>
+                      </item>
+                      <item row="4" column="0">
+                       <widget class="QPushButton" name="btnCancelFiliere_3">
+                        <property name="text">
+                         <string>Annuler</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="1">
+                       <widget class="QPushButton" name="btnConfirmFiliere_3">
+                        <property name="text">
+                         <string>Comfirmer</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="0">
+                       <widget class="QLabel" name="labelNoteClass_3">
+                        <property name="text">
+                         <string>Note</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="5" column="1">
+                       <spacer name="verticalSpacer_10">
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>20</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item row="2" column="0">
+                       <widget class="QLabel" name="labelNomFil_4">
+                        <property name="text">
+                         <string>Domaine</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="1">
+                       <widget class="QPlainTextEdit" name="editNoteClass_3"/>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tabUE">
+                   <attribute name="title">
+                    <string>UE</string>
+                   </attribute>
+                   <layout class="QHBoxLayout" name="horizontalLayout_13">
+                    <item>
+                     <layout class="QFormLayout" name="formLayout_5">
+                      <item row="0" column="0">
+                       <widget class="QLabel" name="labelUE">
+                        <property name="text">
+                         <string>Numero</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="1">
+                       <widget class="QLineEdit" name="numUE"/>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QLabel" name="libelleUE">
+                        <property name="text">
+                         <string>Libelle</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="1">
+                       <widget class="QLineEdit" name="editlabelUE"/>
+                      </item>
+                      <item row="2" column="0">
+                       <widget class="QLabel" name="labelNomFil_6">
+                        <property name="text">
+                         <string>Filiere</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="1">
+                       <widget class="QLineEdit" name="editFiliereUE"/>
+                      </item>
+                      <item row="3" column="0">
+                       <widget class="QLabel" name="labelNoteUE">
+                        <property name="text">
+                         <string>Matières</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="0">
+                       <widget class="QPushButton" name="btnCancelUE">
+                        <property name="text">
+                         <string>Annuler</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="1">
+                       <widget class="QPushButton" name="btnConfirmUE">
+                        <property name="text">
+                         <string>Comfirmer</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="5" column="1">
+                       <spacer name="verticalSpacer_11">
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>20</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item row="3" column="1">
+                       <layout class="QGridLayout" name="gridLayout">
+                        <item row="1" column="2">
+                         <widget class="QCheckBox" name="checkBox_11">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="2">
+                         <widget class="QCheckBox" name="checkBox_12">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="0">
+                         <widget class="QCheckBox" name="checkBox">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QCheckBox" name="checkBox_2">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="2">
+                         <widget class="QCheckBox" name="checkBox_4">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QCheckBox" name="checkBox_6">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="1">
+                         <widget class="QCheckBox" name="checkBox_9">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="QCheckBox" name="checkBox_5">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="QCheckBox" name="checkBox_3">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="QCheckBox" name="checkBox_7">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="QCheckBox" name="checkBox_8">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="1">
+                         <widget class="QCheckBox" name="checkBox_10">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="0">
+                         <widget class="QCheckBox" name="checkBox_13">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="AFFICHAGES">
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <item>
+                 <widget class="QTabWidget" name="wigAffichages">
+                  <property name="currentIndex">
+                   <number>1</number>
+                  </property>
+                  <widget class="QWidget" name="tabClassAffiche">
+                   <attribute name="title">
+                    <string>CLASSES</string>
+                   </attribute>
+                   <layout class="QHBoxLayout" name="horizontalLayout_8">
+                    <item>
+                     <widget class="QTableWidget" name="tableWidget"/>
+                    </item>
+                    <item>
+                     <widget class="QScrollBar" name="verticalScrollBar">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tabAutres">
+                   <attribute name="title">
+                    <string>Autres</string>
+                   </attribute>
+                   <layout class="QHBoxLayout" name="horizontalLayout_14">
+                    <item>
+                     <widget class="QListWidget" name="listWidget"/>
+                    </item>
+                    <item>
+                     <widget class="QScrollBar" name="verticalScrollBar_2">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="AFFECTATIONS">
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_6">
+                <item>
+                 <widget class="QTabWidget" name="wigATTRIBUTION">
+                  <property name="currentIndex">
+                   <number>2</number>
+                  </property>
+                  <widget class="QWidget" name="tabEtCLass">
+                   <attribute name="title">
+                    <string>ETUDIANT-CLASSE</string>
+                   </attribute>
+                   <layout class="QHBoxLayout" name="horizontalLayout_15">
+                    <item>
+                     <layout class="QFormLayout" name="Etu_class_form">
+                      <item row="0" column="0">
+                       <widget class="QLabel" name="Et_Class_MatrLabel">
+                        <property name="text">
+                         <string>Matricule</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QLabel" name="Et_Class_Label">
+                        <property name="text">
+                         <string>Classee:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="1">
+                       <widget class="QDateEdit" name="Et_Class_Date"/>
+                      </item>
+                      <item row="2" column="0">
+                       <widget class="QLabel" name="etu_class_dateLabel">
+                        <property name="text">
+                         <string>Date</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="1">
+                       <widget class="QPushButton" name="Et_Class_ComfirmerAttr">
+                        <property name="text">
+                         <string>Comfirmer</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="0">
+                       <widget class="QPushButton" name="Et_Class_AnnulerAttr">
+                        <property name="text">
+                         <string>Annuler</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="1">
+                       <spacer name="verticalSpacer_12">
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>20</width>
+                          <height>33</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item row="1" column="1">
+                       <widget class="QComboBox" name="Et_Classe_Combo"/>
+                      </item>
+                      <item row="0" column="1">
+                       <widget class="QLineEdit" name="Et_Classe_MatrEdit"/>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <widget class="QTextBrowser" name="Et_Class_Txt_Browser"/>
+                    </item>
+                    <item>
+                     <widget class="QScrollBar" name="etu_class_scroll">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tabClassProf">
+                   <attribute name="title">
+                    <string>PROF-CLASSE</string>
+                   </attribute>
+                   <layout class="QHBoxLayout" name="horizontalLayout_16">
+                    <item>
+                     <layout class="QFormLayout" name="formLayout_7">
+                      <item row="0" column="1">
+                       <widget class="QComboBox" name="Prof_Class_Combo"/>
+                      </item>
+                      <item row="0" column="0">
+                       <widget class="QLabel" name="prof_class_profLabel">
+                        <property name="text">
+                         <string>Prof:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QLabel" name="prof_class_classLabel">
+                        <property name="text">
+                         <string>Classes:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="1">
+                       <widget class="QDateEdit" name="prof_class_date"/>
+                      </item>
+                      <item row="2" column="0">
+                       <widget class="QLabel" name="prod_class_datelabel">
+                        <property name="text">
+                         <string>Date</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="1">
+                       <widget class="QPushButton" name="prof_class_comfirmer">
+                        <property name="text">
+                         <string>Comfirmer</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="0">
+                       <widget class="QPushButton" name="prof_class_annuler">
+                        <property name="text">
+                         <string>Annuler</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="1">
+                       <spacer name="verticalSpacer_13">
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>20</width>
+                          <height>33</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item row="1" column="1">
+                       <layout class="QGridLayout" name="prof_class_classGrid">
+                        <item row="0" column="0">
+                         <widget class="QCheckBox" name="prof_class_class1">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QCheckBox" name="prof_class_class3">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="QCheckBox" name="prof_class_class5">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="QCheckBox" name="prof_class_class2">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="QCheckBox" name="prof_class_class4">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="1">
+                         <widget class="QCheckBox" name="prof_class_class6">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="0">
+                         <widget class="QCheckBox" name="prof_class_class7">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <widget class="QTextBrowser" name="prof_class_txtView"/>
+                    </item>
+                    <item>
+                     <widget class="QScrollBar" name="prof_class_txtScroll">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tabMatProf">
+                   <attribute name="title">
+                    <string>MATIERE-PROF</string>
+                   </attribute>
+                   <layout class="QHBoxLayout" name="horizontalLayout_17">
+                    <item>
+                     <layout class="QFormLayout" name="matiere_profForm">
+                      <item row="0" column="1">
+                       <widget class="QComboBox" name="matiere_prof_Combo">
+                        <property name="insertPolicy">
+                         <enum>QComboBox::InsertAlphabetically</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="0">
+                       <widget class="QLabel" name="matiere_prof_profLabel">
+                        <property name="text">
+                         <string>Prof:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QLabel" name="label_9">
+                        <property name="text">
+                         <string>Matieres</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="1">
+                       <widget class="QDateEdit" name="dateEdit_3"/>
+                      </item>
+                      <item row="2" column="0">
+                       <widget class="QLabel" name="label_10">
+                        <property name="text">
+                         <string>Date</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="1">
+                       <widget class="QPushButton" name="ComfirmerAttr_3">
+                        <property name="text">
+                         <string>Comfirmer</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="0">
+                       <widget class="QPushButton" name="AnnulerAttr_3">
+                        <property name="text">
+                         <string>Annuler</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="1">
+                       <spacer name="verticalSpacer_14">
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>20</width>
+                          <height>33</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item row="1" column="1">
+                       <layout class="QGridLayout" name="matiere_prof_grid">
+                        <item row="0" column="0">
+                         <widget class="QCheckBox" name="checkBox_25">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QCheckBox" name="checkBox_40">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="QCheckBox" name="checkBox_41">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="QCheckBox" name="checkBox_26">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="QCheckBox" name="checkBox_43">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="1">
+                         <widget class="QCheckBox" name="checkBox_44">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="0">
+                         <widget class="QCheckBox" name="checkBox_45">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="1">
+                         <widget class="QCheckBox" name="checkBox_27">
+                          <property name="text">
+                           <string>CheckBox</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <widget class="QTextBrowser" name="matier_prof_txtBrowser"/>
+                    </item>
+                    <item>
+                     <widget class="QScrollBar" name="matiere_profScroll">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="NOTIFICATIONS">
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <item>
+                 <widget class="QScrollArea" name="scrollNotif">
+                  <property name="widgetResizable">
+                   <bool>true</bool>
+                  </property>
+                  <widget class="QWidget" name="scrollAreaWidgetContents">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>98</width>
+                     <height>175</height>
+                    </rect>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_9">
+                    <item>
+                     <widget class="QTableWidget" name="tableWidget_2"/>
+                    </item>
+                    <item>
+                     <widget class="Line" name="line_3">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QTextBrowser" name="textBrowser"/>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
